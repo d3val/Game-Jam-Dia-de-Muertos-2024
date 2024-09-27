@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField] int room;
     [SerializeField] Door connectedDoor;
     public Transform spawnPos;
 
