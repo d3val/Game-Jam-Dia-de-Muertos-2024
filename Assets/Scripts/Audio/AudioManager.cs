@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using UnityEngine.Rendering;
+using System.Xml.Linq;
 
 public class AudioManager : MonoBehaviour
 {
@@ -47,38 +48,46 @@ public class AudioManager : MonoBehaviour
     public void SetMasterVolume()
     {
         float volume = sliderAudioMaster.value;
-        audioMixer.SetFloat(mixerNameMasterVolume, Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat(mixerNameMasterVolume, volume);
+        SetVolume(mixerNameMasterVolume, volume);
     }
 
     public void SetSFXVolume()
     {
         float volume = sliderAudioSFX.value;
-        audioMixer.SetFloat(mixerNameSFXVolume, Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat(mixerNameSFXVolume, volume);
+        SetVolume(mixerNameSFXVolume,volume);
     }
     public void SetMusicVolume()
     {
         float volume = sliderAudioMusic.value;
-        audioMixer.SetFloat(mixerNameMusicVolume, Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat(mixerNameMusicVolume, volume);
+        SetVolume(mixerNameMusicVolume, volume);
     }
 
     private void LoadMasterVolume()
     {
-        sliderAudioMaster.value = PlayerPrefs.GetFloat(mixerNameMasterVolume);
-        SetMasterVolume();
+        float volume = PlayerPrefs.GetFloat(mixerNameMasterVolume);
+        sliderAudioMaster.SetValueWithoutNotify(volume);
+        SetVolume(mixerNameMasterVolume, volume);
     }
 
     private void LoadSFXVolume()
     {
-        sliderAudioMaster.value = PlayerPrefs.GetFloat(mixerNameSFXVolume);
-        SetSFXVolume();
+        float volume = PlayerPrefs.GetFloat(mixerNameSFXVolume);
+        sliderAudioSFX.SetValueWithoutNotify(volume);
+        SetVolume(mixerNameSFXVolume, volume);
     }
 
     private void LoadMusicVolume()
     {
-        sliderAudioMaster.value = PlayerPrefs.GetFloat(mixerNameMusicVolume);
-        SetMusicVolume();
+        float volume = PlayerPrefs.GetFloat(mixerNameMusicVolume);
+        sliderAudioMusic.SetValueWithoutNotify(volume);
+        SetVolume(mixerNameMusicVolume, volume);
+    }
+
+    private void SetVolume(string mixName, float volume)
+    {
+        audioMixer.SetFloat(mixName, Mathf.Log10(volume) * 20);
     }
 }
