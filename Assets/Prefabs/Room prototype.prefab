@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 3
+  room: 2
   connectedDoor: {fileID: 4097365902525239256}
   spawnPos: {fileID: 7811998382363632164}
 --- !u!1 &1105122624033962227
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 1
+  room: 0
   connectedDoor: {fileID: 4039984388944072565}
   spawnPos: {fileID: 5136023495232295419}
 --- !u!1 &1133965744719573687
@@ -438,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 4
+  room: 3
   connectedDoor: {fileID: 4097365902525239256}
   spawnPos: {fileID: 7506732994424762600}
 --- !u!1 &1239873014668149769
@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 1
+  room: 0
   connectedDoor: {fileID: 6515311245020703828}
   spawnPos: {fileID: 3589997592997154183}
 --- !u!1 &1526871183429332045
@@ -763,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 4
+  room: 3
   connectedDoor: {fileID: 9040961405890321858}
   spawnPos: {fileID: 1145623187622308108}
 --- !u!1 &1627740407757951689
@@ -941,7 +941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 1
+  room: 0
   connectedDoor: {fileID: 2829140759377233356}
   spawnPos: {fileID: 5673381882693109043}
 --- !u!1 &1648614504442257837
@@ -977,6 +977,7 @@ Transform:
   - {fileID: 1798295559410891960}
   - {fileID: 7275845262798927206}
   - {fileID: 7087157701490914838}
+  - {fileID: 1852750398235214036}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2087170315279789585
@@ -1123,7 +1124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 4
+  room: 3
   connectedDoor: {fileID: 1261137802961630862}
   spawnPos: {fileID: 3815963161660983369}
 --- !u!1 &2126825200944489142
@@ -1168,7 +1169,7 @@ GameObject:
   - component: {fileID: 7087157701490914838}
   - component: {fileID: 870651336754151740}
   m_Layer: 0
-  m_Name: Room 4
+  m_Name: Room 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1256,7 +1257,7 @@ GameObject:
   - component: {fileID: 8436830196450021464}
   - component: {fileID: 2142740695888940891}
   m_Layer: 0
-  m_Name: Room 1
+  m_Name: Room 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1375,7 +1376,7 @@ GameObject:
   - component: {fileID: 1798295559410891960}
   - component: {fileID: 637545696036071899}
   m_Layer: 0
-  m_Name: Room 2
+  m_Name: Room 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1483,6 +1484,162 @@ Transform:
   m_Children: []
   m_Father: {fileID: 213947252955947891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3018279004094004987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852750398235214036}
+  - component: {fileID: 8192699815903659256}
+  - component: {fileID: 5553071975194198108}
+  - component: {fileID: 6807600071935546433}
+  - component: {fileID: 3618271172664060428}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1852750398235214036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018279004094004987}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -8, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2254608905848494613}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &8192699815903659256
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018279004094004987}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &5553071975194198108
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018279004094004987}
+  m_Enabled: 1
+--- !u!114 &6807600071935546433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018279004094004987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+--- !u!114 &3618271172664060428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3018279004094004987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b7ba56d89f97948b7c35709789968b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rooms:
+  - {fileID: 8436830196450021464}
+  - {fileID: 1798295559410891960}
+  - {fileID: 7275845262798927206}
+  - {fileID: 7087157701490914838}
+  transitionDuration: 1
 --- !u!1 &3138576499270898151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,7 +1784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 3
+  room: 2
   connectedDoor: {fileID: 5941322230272167379}
   spawnPos: {fileID: 3036003961820966096}
 --- !u!1 &3225682886053982405
@@ -1836,7 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 1
+  room: 0
   connectedDoor: {fileID: 6858486435980391607}
   spawnPos: {fileID: 6570681885808100048}
 --- !u!1 &3647859587116503332
@@ -2014,7 +2171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 2
+  room: 1
   connectedDoor: {fileID: 4039984388944072565}
   spawnPos: {fileID: 1901677675848721530}
 --- !u!1 &3863277236544319275
@@ -2223,7 +2380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 3
+  room: 2
   connectedDoor: {fileID: 9040961405890321858}
   spawnPos: {fileID: 9129809948057237383}
 --- !u!1 &4943929752314363067
@@ -2268,7 +2425,7 @@ GameObject:
   - component: {fileID: 7275845262798927206}
   - component: {fileID: 175714143451538943}
   m_Layer: 0
-  m_Name: Room 3
+  m_Name: Room 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2551,7 +2708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 2
+  room: 1
   connectedDoor: {fileID: 5471459955562426857}
   spawnPos: {fileID: 1892033465489142631}
 --- !u!1 &7107567839463676521
@@ -2729,7 +2886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 3
+  room: 2
   connectedDoor: {fileID: 4097365902525239256}
   spawnPos: {fileID: 962963142440746134}
 --- !u!1 &7652458326083411518
@@ -2907,7 +3064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 4
+  room: 3
   connectedDoor: {fileID: 7807137482984090293}
   spawnPos: {fileID: 7068500880347774850}
 --- !u!1 &7898693972742420216
@@ -3085,7 +3242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 2
+  room: 1
   connectedDoor: {fileID: 4039984388944072565}
   spawnPos: {fileID: 7054163076676021673}
 --- !u!1 &8802271790618455182
@@ -3232,6 +3389,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  room: 2
+  room: 1
   connectedDoor: {fileID: 6858486435980391607}
   spawnPos: {fileID: 6195108838506829383}
