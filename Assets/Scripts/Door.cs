@@ -21,7 +21,12 @@ public class Door : MonoBehaviour
 
         // We move the player to the connected doos spawn position and init the translation of the camera.
         item.transform.position = connectedDoor.spawnPos.position;
-        CameraMovement.Instance.MoveToRoom(connectedDoor.room);
+
+        //If the door returns us to  the initial room, use fade effect
+        if (connectedDoor.room == 0)
+            CameraMovement.Instance.MoveToRoom(connectedDoor.room, true);
+        else
+            CameraMovement.Instance.MoveToRoom(connectedDoor.room);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
