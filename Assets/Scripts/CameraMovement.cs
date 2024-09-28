@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -8,6 +10,9 @@ public class CameraMovement : MonoBehaviour
     [SerializeField] Transform[] rooms;
     [Tooltip("How many seconds is going to take the transition?")]
     [SerializeField] float transitionDuration = 1.0f;
+    [Header("Fading settings")]
+    [SerializeField] CanvasGroup canvas;
+    [SerializeField] float fadeDuration = 0.5f;
 
     private void Awake()
     {
@@ -27,6 +32,8 @@ public class CameraMovement : MonoBehaviour
 
     IEnumerator TranslateToRoom(int roomIndex)
     {
+        yield return StartCoroutine(FadeIn());
+
         float interVar;
         Vector3 transitionVector = transform.position;
         Vector2 startPoint = transform.position;
@@ -36,8 +43,8 @@ public class CameraMovement : MonoBehaviour
         {
             interVar = t / transitionDuration;
             // Vector's components separately calculated
-            transitionVector.x =Mathf.Lerp(startPoint.x, rooms[roomIndex].position.x, interVar);
-            transitionVector.y =Mathf.Lerp(startPoint.y, rooms[roomIndex].position.y, interVar);
+            transitionVector.x = Mathf.Lerp(startPoint.x, rooms[roomIndex].position.x, interVar);
+            transitionVector.y = Mathf.Lerp(startPoint.y, rooms[roomIndex].position.y, interVar);
             //Calculations applied
             transform.position = transitionVector;
             yield return null;
@@ -46,5 +53,26 @@ public class CameraMovement : MonoBehaviour
         // To be sure that it is correctly placed
         transform.position = new Vector3(rooms[roomIndex].position.x, rooms[roomIndex].position.y, transform.position.z);
 
+        yield return StartCoroutine(FadeOut());
+    }
+
+    IEnumerator FadeIn()
+    {
+        for (float t = 0; t < fadeDuration; t += Time.deltaTime)
+        {
+            canvas.alpha = t / fadeDuration;
+            yield return null;
+        }
+        canvas.alpha = 1;
+    }
+
+    IEnumerator FadeOut()
+    {
+        for (float t = fadeDuration; t > 0; t -= Time.deltaTime)
+        {
+            canvas.alpha = t / fadeDuration;
+            yield return null;
+        }
+        canvas.alpha = 0;
     }
 }
