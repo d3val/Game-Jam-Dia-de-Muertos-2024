@@ -25,14 +25,15 @@ public class CameraMovement : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void MoveToRoom(int roomIndex)
+    public void MoveToRoom(int roomIndex, bool fadeEnabled = false)
     {
-        StartCoroutine(TranslateToRoom(roomIndex));
+        StartCoroutine(TranslateToRoom(roomIndex, fadeEnabled));
     }
 
-    IEnumerator TranslateToRoom(int roomIndex)
+    IEnumerator TranslateToRoom(int roomIndex, bool fadeEnabled)
     {
-        yield return StartCoroutine(FadeIn());
+        if (fadeEnabled)
+            yield return StartCoroutine(FadeIn());
 
         float interVar;
         Vector3 transitionVector = transform.position;
@@ -53,7 +54,8 @@ public class CameraMovement : MonoBehaviour
         // To be sure that it is correctly placed
         transform.position = new Vector3(rooms[roomIndex].position.x, rooms[roomIndex].position.y, transform.position.z);
 
-        yield return StartCoroutine(FadeOut());
+        if (fadeEnabled)
+            yield return StartCoroutine(FadeOut());
     }
 
     IEnumerator FadeIn()
