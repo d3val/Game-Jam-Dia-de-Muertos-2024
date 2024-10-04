@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 238548801486663340}
   - component: {fileID: 6052904913155941554}
   - component: {fileID: 2243161083033834008}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: North door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6093302170589661633
 Transform:
   m_ObjectHideFlags: 0
@@ -274,13 +274,13 @@ GameObject:
   - component: {fileID: 1054216930676144305}
   - component: {fileID: 7744439140651812388}
   - component: {fileID: 6858486435980391607}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: East door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8917881897354267388
 Transform:
   m_ObjectHideFlags: 0
@@ -421,7 +421,7 @@ GameObject:
   - component: {fileID: 3024345005816369984}
   - component: {fileID: 6042962150470563633}
   - component: {fileID: 9040961405890321858}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: East door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 8204910214647477088}
   - component: {fileID: 3609849329751921952}
   - component: {fileID: 7807137482984090293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: North door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 0
-  connectedDoor: {fileID: 6515311245020703828}
+  connectedDoor: {fileID: 2141098519489373821}
   spawnPos: {fileID: 3589997592997154183}
 --- !u!1 &1526871183429332045
 GameObject:
@@ -746,7 +746,7 @@ GameObject:
   - component: {fileID: 8129937999690745205}
   - component: {fileID: 7366150172784794064}
   - component: {fileID: 1261137802961630862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: West door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -924,7 +924,7 @@ GameObject:
   - component: {fileID: 7427645909143415212}
   - component: {fileID: 2653998157339515144}
   - component: {fileID: 9184715738412421382}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: South door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 0
-  connectedDoor: {fileID: 2829140759377233356}
+  connectedDoor: {fileID: 7807137482984090293}
   spawnPos: {fileID: 5673381882693109043}
 --- !u!1 &1648614504442257837
 GameObject:
@@ -1108,7 +1108,7 @@ GameObject:
   - component: {fileID: 4199828834381542956}
   - component: {fileID: 4187949913443902374}
   - component: {fileID: 1375845359599802376}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: North door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,6 +1359,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7087157701490914838}
   - component: {fileID: 870651336754151740}
+  - component: {fileID: 5637605993291018502}
+  - component: {fileID: 8419224242473709950}
   m_Layer: 0
   m_Name: Room 3
   m_TagString: Untagged
@@ -1375,7 +1377,7 @@ Transform:
   m_GameObject: {fileID: 2458907757415161037}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 29.88, y: -7.98, z: 0}
   m_LocalScale: {x: 12, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1383,6 +1385,7 @@ Transform:
   - {fileID: 481903245213576289}
   - {fileID: 7637441795523701310}
   - {fileID: 1986661334321549070}
+  - {fileID: 5420298722041333664}
   m_Father: {fileID: 2254608905848494613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &870651336754151740
@@ -1437,6 +1440,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5637605993291018502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2458907757415161037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf70cf8feba3ae24fad2f567456509dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctDoor: {fileID: 0}
+  roomDialoges: []
+  DogInitPos: {fileID: 5420298722041333664}
+--- !u!114 &8419224242473709950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2458907757415161037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2487908814567376150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1481,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8436830196450021464}
   - component: {fileID: 2142740695888940891}
+  - component: {fileID: 7807436409428714534}
+  - component: {fileID: 2763012040497651744}
   m_Layer: 0
   m_Name: Room 0
   m_TagString: Untagged
@@ -1471,6 +1507,7 @@ Transform:
   - {fileID: 8917881897354267388}
   - {fileID: 8990592298879334437}
   - {fileID: 3632615236538114544}
+  - {fileID: 8014342893242170305}
   m_Father: {fileID: 2254608905848494613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2142740695888940891
@@ -1525,6 +1562,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7807436409428714534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487908814567376150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf70cf8feba3ae24fad2f567456509dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctDoor: {fileID: 8990592298879334437}
+  roomDialoges: []
+  DogInitPos: {fileID: 0}
+--- !u!114 &2763012040497651744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2487908814567376150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2665592596743913686
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1634,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1798295559410891960}
   - component: {fileID: 637545696036071899}
+  - component: {fileID: 552106389473239655}
+  - component: {fileID: 3172596013600033585}
   m_Layer: 0
   m_Name: Room 1
   m_TagString: Untagged
@@ -1582,7 +1652,7 @@ Transform:
   m_GameObject: {fileID: 2708864168997987912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12, y: -8, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 12, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1590,6 +1660,7 @@ Transform:
   - {fileID: 3079983287990603845}
   - {fileID: 3267260022983630216}
   - {fileID: 4917577750478063491}
+  - {fileID: 1131923484455439981}
   m_Father: {fileID: 2254608905848494613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &637545696036071899
@@ -1644,6 +1715,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &552106389473239655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708864168997987912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf70cf8feba3ae24fad2f567456509dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctDoor: {fileID: 6988380029491567273}
+  roomDialoges: []
+  DogInitPos: {fileID: 1131923484455439981}
+--- !u!114 &3172596013600033585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2708864168997987912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &2894869392157106907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1833,6 +1935,37 @@ MonoBehaviour:
   transitionDuration: 1
   canvas: {fileID: 5474807161613902761}
   fadeDuration: 0.5
+--- !u!1 &3051463490590909270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1131923484455439981}
+  m_Layer: 0
+  m_Name: Dog pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1131923484455439981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3051463490590909270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1798295559410891960}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3138576499270898151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,13 +1978,13 @@ GameObject:
   - component: {fileID: 4035790396610748021}
   - component: {fileID: 991339884499918748}
   - component: {fileID: 5471459955562426857}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: South door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6484265898954834083
 Transform:
   m_ObjectHideFlags: 0
@@ -2054,13 +2187,13 @@ GameObject:
   - component: {fileID: 7568035574382360970}
   - component: {fileID: 7495961139710763788}
   - component: {fileID: 2829140759377233356}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: West door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5402946606352580700
 Transform:
   m_ObjectHideFlags: 0
@@ -2232,7 +2365,7 @@ GameObject:
   - component: {fileID: 1058533484856715102}
   - component: {fileID: 3082013826986097147}
   - component: {fileID: 2141098519489373821}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: South door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2365,7 +2498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 1
-  connectedDoor: {fileID: 4039984388944072565}
+  connectedDoor: {fileID: 7807137482984090293}
   spawnPos: {fileID: 1901677675848721530}
 --- !u!1 &3863277236544319275
 GameObject:
@@ -2441,13 +2574,13 @@ GameObject:
   - component: {fileID: 8100033883306307185}
   - component: {fileID: 3781646127774976851}
   - component: {fileID: 4097365902525239256}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: West door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2402623473191064473
 Transform:
   m_ObjectHideFlags: 0
@@ -2617,6 +2750,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7275845262798927206}
   - component: {fileID: 175714143451538943}
+  - component: {fileID: 2169026415609076366}
+  - component: {fileID: 6265629217997492422}
   m_Layer: 0
   m_Name: Room 2
   m_TagString: Untagged
@@ -2633,7 +2768,7 @@ Transform:
   m_GameObject: {fileID: 5277187592604375694}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.93, y: 0, z: 0}
+  m_LocalPosition: {x: -12, y: 0, z: 0}
   m_LocalScale: {x: 12, y: 8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2641,6 +2776,7 @@ Transform:
   - {fileID: 213947252955947891}
   - {fileID: 6093302170589661633}
   - {fileID: 6484265898954834083}
+  - {fileID: 6419603148280705609}
   m_Father: {fileID: 2254608905848494613}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &175714143451538943
@@ -2695,6 +2831,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2169026415609076366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277187592604375694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf70cf8feba3ae24fad2f567456509dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correctDoor: {fileID: 2402623473191064473}
+  roomDialoges: []
+  DogInitPos: {fileID: 6419603148280705609}
+--- !u!114 &6265629217997492422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277187592604375694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &5682748275107919584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,6 +2924,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 481903245213576289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6445329579385885299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5420298722041333664}
+  m_Layer: 0
+  m_Name: Dog pos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5420298722041333664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6445329579385885299}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.01, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7087157701490914838}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6895754172254647880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,13 +2967,13 @@ GameObject:
   - component: {fileID: 7539315504795400555}
   - component: {fileID: 2321102079668405720}
   - component: {fileID: 5941322230272167379}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: North door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3267260022983630216
 Transform:
   m_ObjectHideFlags: 0
@@ -2947,7 +3145,7 @@ GameObject:
   - component: {fileID: 7666305530886967663}
   - component: {fileID: 8549001116457600292}
   - component: {fileID: 4751959600912585068}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: East door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3080,8 +3278,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 2
-  connectedDoor: {fileID: 6858486435980391607}
+  connectedDoor: {fileID: 9184715738412421382}
   spawnPos: {fileID: 962963142440746134}
+--- !u!1 &7544725926090203891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6419603148280705609}
+  m_Layer: 0
+  m_Name: Dog pos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6419603148280705609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7544725926090203891}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7275845262798927206}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7652458326083411518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,7 +3354,7 @@ GameObject:
   - component: {fileID: 871549810117365329}
   - component: {fileID: 5714147112264063326}
   - component: {fileID: 6515311245020703828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: South door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3291,6 +3520,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4917577750478063491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8013141946241465841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8014342893242170305}
+  m_Layer: 0
+  m_Name: Dog pos (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8014342893242170305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8013141946241465841}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8436830196450021464}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8178230763889366122
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,7 +3563,7 @@ GameObject:
   - component: {fileID: 7234301738627256504}
   - component: {fileID: 7519638416332732922}
   - component: {fileID: 5437608141568049549}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: East door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3436,7 +3696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 1
-  connectedDoor: {fileID: 4039984388944072565}
+  connectedDoor: {fileID: 9184715738412421382}
   spawnPos: {fileID: 7054163076676021673}
 --- !u!1 &8802271790618455182
 GameObject:
@@ -3450,7 +3710,7 @@ GameObject:
   - component: {fileID: 1745541831677248473}
   - component: {fileID: 920735595858402566}
   - component: {fileID: 4039984388944072565}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: West door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3583,5 +3843,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 1
-  connectedDoor: {fileID: 6858486435980391607}
+  connectedDoor: {fileID: 4751959600912585068}
   spawnPos: {fileID: 6195108838506829383}
