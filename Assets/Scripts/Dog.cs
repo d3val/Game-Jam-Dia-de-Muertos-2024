@@ -15,14 +15,17 @@ public class Dog : MonoBehaviour
     private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
-
+            return;
+        }
         Destroy(gameObject);
     }
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        SetDestination(Vector2.zero);
     }
 
     public void MoveToDoor()
