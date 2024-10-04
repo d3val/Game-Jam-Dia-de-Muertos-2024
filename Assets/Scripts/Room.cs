@@ -8,4 +8,5 @@ public class Room : MonoBehaviour
     //This variable might be changedm for a component that manage dialogues
     [TextArea] public List<string> roomDialoges;
     bool isFirtsTime = true;
+    public Transform DogInitPos;
 }

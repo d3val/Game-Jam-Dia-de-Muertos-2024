@@ -25,7 +25,6 @@ public class Dog : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        SetDestination(Vector2.zero);
     }
 
     public void MoveToDoor()
@@ -33,15 +32,20 @@ public class Dog : MonoBehaviour
         agent.SetDestination(currentRoom.correctDoor.position);
     }
 
-    public void SetDestination(Vector2 tarjetPos)
-    {
-        agent.SetDestination(tarjetPos);
-    }
-
     public void ChangeRoom(Room NewRoom)
     {
         currentRoom = NewRoom;
         currentDialogues.Clear();
         currentDialogues = NewRoom.roomDialoges;
+        agent.SetDestination(currentRoom.DogInitPos.position);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("Guau");
+            MoveToDoor();
+        }
     }
 }
