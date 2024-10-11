@@ -1,0 +1,34 @@
+{
+    "name": "PrimaryActions",
+    "maps": [
+        {
+            "name": "NPC",
+            "id": "b9a9f1b0-779e-4116-9f5a-99f6dd68c57e",
+            "actions": [
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "e822d3c1-f0f5-442f-8049-cdb6227c3657",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f92071af-f4e4-4f3b-b7f1-6e4f38dd93ce",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
