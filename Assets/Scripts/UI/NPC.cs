@@ -17,6 +17,9 @@ public class NPC : MonoBehaviour
     InputAction interactAction;
     [SerializeField] List<Dialogue> dialogues;
     public UnityEvent OnInteractStart;
+    public UnityEvent OnDialogueFirstEnd;
+    bool firstEnd = true;
+    public UnityEvent OnDialogueEnd;
     int dialogueIndex = 0;
 
     bool canInteract = false;
@@ -66,6 +69,12 @@ public class NPC : MonoBehaviour
         isOnDialogue = false;
         dialogueIndex = 0;
         DialogueManager.instance.HideUI();
+        if (firstEnd)
+        {
+            OnDialogueFirstEnd.Invoke();
+            firstEnd = false;
+        }
+        OnDialogueEnd.Invoke();
     }
 
     public void SkipDialogue()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Door : MonoBehaviour
 {
@@ -31,10 +32,10 @@ public class Door : MonoBehaviour
         if (!MoveCamera)
             return;
         //If the door returns us to  the initial room, use fade effect
-        if (connectedDoor.room == 0)
-            CameraMovement.Instance.MoveToRoom(connectedDoor.room, true);
-        else
+        if (connectedDoor.room == room)
             CameraMovement.Instance.MoveToRoom(connectedDoor.room);
+        else
+            CameraMovement.Instance.MoveToRoom(connectedDoor.room,true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -42,6 +43,7 @@ public class Door : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Pass(collision.gameObject);
+            collision.GetComponent<NavMeshAgent>().isStopped = true;
         }
         else if (collision.CompareTag("Dog"))
         {
