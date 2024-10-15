@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.34375, z: 0}
-  m_LocalScale: {x: 0.20000002, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.016666668, y: 0.025, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8525381153113001202}
@@ -131,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 7, y: 3.5}
   m_EdgeRadius: 0
 --- !u!114 &3159980038512798656
 MonoBehaviour:
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: 0
-  connectedDoor: {fileID: 0}
+  connectedDoor: {fileID: 2141098519489373821, guid: 081d2dd9f50967b408ce0b106d50ffd8, type: 3}
   spawnPos: {fileID: 8525381153113001202}
 --- !u!95 &1595881775160863483
 Animator:

@@ -39,13 +39,4 @@ public class Dog : MonoBehaviour
         currentDialogues = NewRoom.roomDialoges;
         agent.SetDestination(currentRoom.DogInitPos.position);
     }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            Debug.Log("Guau");
-            MoveToDoor();
-        }
-    }
 }
