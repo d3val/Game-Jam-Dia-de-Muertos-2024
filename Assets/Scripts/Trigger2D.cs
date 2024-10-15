@@ -9,6 +9,7 @@ public class Trigger2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        On2DEnter.Invoke();
+        if (collision.CompareTag("Player"))
+            On2DEnter.Invoke();
     }
 }
