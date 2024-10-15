@@ -32,6 +32,7 @@ public class NavMeshTarget : MonoBehaviour
 
     private void SetDestination(Vector3 destination)
     {
+        agent.isStopped = false;
         agent.SetDestination(destination);
         Vector3 direction = (destination - transform.position).normalized;
         if (direction.x > 0 && !lookingRight)
