@@ -406,6 +406,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &403747507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8763073920542608954, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+  m_PrefabInstance: {fileID: 1392264817580077972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &405777805 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8854856372883771458, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
@@ -799,12 +804,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 356029080659468422, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
   m_PrefabInstance: {fileID: 1392264817580077972}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 403747507}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &822225966 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4111761783749894589, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+  m_PrefabInstance: {fileID: 1392264817580077972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &823692992 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 829860222748203262, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
@@ -2014,6 +2024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Room 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8763073920542608954, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -2058,6 +2072,10 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -158376293027366555, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
     value: {fileID: 1148976793}
+  - key: {fileID: 8405828614787720372, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
+    value: {fileID: 403747507}
+  - key: {fileID: -6970666527311153147, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
+    value: {fileID: 822225966}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &2703142699586547174
