@@ -32,7 +32,7 @@ public class Door : MonoBehaviour
         if (!MoveCamera)
             return;
         //If the door returns us to  the initial room, use fade effect
-        if (connectedDoor.room == 0)
+        if (connectedDoor.room == room)
             CameraMovement.Instance.MoveToRoom(connectedDoor.room);
         else
             CameraMovement.Instance.MoveToRoom(connectedDoor.room,true);

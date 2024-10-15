@@ -716,6 +716,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &786772015 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6899761574815223039, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+  m_PrefabInstance: {fileID: 1740777299}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &792678597 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6899761574815223039, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
@@ -1417,6 +1428,10 @@ PrefabInstance:
       propertyPath: room
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 356029080659468422, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+      propertyPath: connectedDoor
+      value: 
+      objectReference: {fileID: 786772015}
     - target: {fileID: 1720079221995264821, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: connectedDoor
       value: 
