@@ -19,6 +19,7 @@ public class NPC : MonoBehaviour
     [SerializeField] InputActionAsset primaryActions;
     InputAction interactAction;
     [SerializeField] List<Dialogue> dialogues;
+    [SerializeField] List<Dialogue> secondaryDialogues;
     public UnityEvent OnInteractStart;
     public UnityEvent OnDialogueFirstEnd;
     bool firstEnd = true;
@@ -124,5 +125,11 @@ public class NPC : MonoBehaviour
     public void StartWalking()
     {
         animator.SetTrigger("Walk");
+    }
+
+    public void ChangeDialogues()
+    {
+        if (secondaryDialogues == null) return;
+        dialogues = secondaryDialogues;
     }
 }
