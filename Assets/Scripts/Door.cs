@@ -14,6 +14,7 @@ public class Door : MonoBehaviour
     [Tooltip("Where the player will be spawned when cross to this door")]
     public Transform spawnPos;
     public UnityEvent OnDogPass;
+    public UnityEvent OnPlayerPass;
 
     private void Start()
     {
@@ -46,6 +47,7 @@ public class Door : MonoBehaviour
         {
             Pass(collision.gameObject);
             collision.GetComponent<NavMeshAgent>().isStopped = true;
+            OnPlayerPass.Invoke();
         }
         else if (collision.CompareTag("Dog"))
         {
