@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class Door : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Door : MonoBehaviour
     [SerializeField] Door connectedDoor;
     [Tooltip("Where the player will be spawned when cross to this door")]
     public Transform spawnPos;
+    public UnityEvent OnDogPass;
 
     private void Start()
     {
@@ -49,6 +51,7 @@ public class Door : MonoBehaviour
         {
             Pass(collision.gameObject, false);
             Dog.Instance.ChangeRoom(connectedDoor.m_Room);
+            OnDogPass.Invoke();
         }
     }
 }
