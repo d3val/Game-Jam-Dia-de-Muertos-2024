@@ -9,6 +9,7 @@ public class Dog : MonoBehaviour
     public static Dog Instance { get; private set; }
     //This variable will be changed depending on the dialogue system
     List<string> currentDialogues = new List<string>();
+    [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Room currentRoom;
     NavMeshAgent agent;
 
@@ -38,5 +39,10 @@ public class Dog : MonoBehaviour
         currentDialogues.Clear();
         currentDialogues = NewRoom.roomDialoges;
         agent.SetDestination(currentRoom.DogInitPos.position);
+    }
+
+    public void SetAlpha(float alpha)
+    {
+        spriteRenderer.color = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b, alpha);
     }
 }
