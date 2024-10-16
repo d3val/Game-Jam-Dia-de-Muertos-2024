@@ -541,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345363051738025765, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_Name
-      value: Room 0 (1)
+      value: Room 2
       objectReference: {fileID: 0}
     - target: {fileID: 6201171495773749196, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: room
@@ -851,6 +851,8 @@ PlayableDirector:
     value: {fileID: 1148976793}
   - key: {fileID: 6384569961396794232, guid: c6eac079d2cb35245bb0e166b2333eba, type: 2}
     value: {fileID: 1499079469}
+  - key: {fileID: -1615000498314087967, guid: c6eac079d2cb35245bb0e166b2333eba, type: 2}
+    value: {fileID: 1100782308}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &951689178 stripped
@@ -880,6 +882,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fa79194b9cddbc419a4f581a21ad370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1100782308 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4103277027178796199, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+  m_PrefabInstance: {fileID: 5823241854626623423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1148976783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6072999110016570334, guid: fe61d4f384fa0904d88e2ff82a9e8dd2, type: 3}
@@ -2022,7 +2029,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5345363051738025765, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_Name
-      value: Room 0
+      value: Room 1
       objectReference: {fileID: 0}
     - target: {fileID: 8763073920542608954, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_IsActive
@@ -2415,7 +2422,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4157042506672185021, guid: 5269a71fab36b324686430ea4726103b, type: 3}
       propertyPath: m_Name
-      value: NPC
+      value: Jaguar
       objectReference: {fileID: 0}
     - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
       propertyPath: m_LocalScale.x
@@ -2468,6 +2475,19 @@ PrefabInstance:
     - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueText
+      value: "Un reci\xE9n llegado, que deleite. \xBFTe perdiste?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueText
+      value: "Conozco este camino mejor que tu, as\xED que escucha mi consejo: Sigue
+        a tu amigo canino, \xE9l te guiar\xE1 por el camino."
       objectReference: {fileID: 0}
     - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
       propertyPath: OnDialogueEnd.m_PersistentCalls.m_Calls.Array.size

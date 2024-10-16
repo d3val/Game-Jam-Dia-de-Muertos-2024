@@ -6,10 +6,13 @@ using UnityEngine.InputSystem;
 
 public class NPC : MonoBehaviour
 {
+    [SerializeField]
+    Animator animator;
+
     [System.Serializable]
     public struct Dialogue
     {
-        public string dialogueText;
+        [TextArea] public string dialogueText;
         public UnityEvent OnDialogueStart;
     }
 
@@ -30,6 +33,11 @@ public class NPC : MonoBehaviour
         interactAction = primaryActions.FindActionMap("NPC").FindAction("Interact");
 
         interactAction.performed += Interact;
+    }
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
     }
 
     private void OnEnable()
@@ -111,5 +119,10 @@ public class NPC : MonoBehaviour
             canInteract = false;
             EndDialogue();
         }
+    }
+
+    public void StartWalking()
+    {
+        animator.SetTrigger("Walk");
     }
 }
