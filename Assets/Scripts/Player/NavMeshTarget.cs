@@ -7,6 +7,7 @@ public class NavMeshTarget : MonoBehaviour
 
     private NavMeshAgent agent;
     [SerializeField] Camera cam;
+    bool canMove = true;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class NavMeshTarget : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove) return;
+
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -48,5 +51,10 @@ public class NavMeshTarget : MonoBehaviour
     {
         lookingRight = !lookingRight;
         transform.Rotate(0, 180, 0);
+    }
+
+    public void ActivePlayerMove(bool state)
+    {
+       canMove = state;
     }
 }

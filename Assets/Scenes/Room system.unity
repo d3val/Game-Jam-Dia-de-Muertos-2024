@@ -2205,6 +2205,8 @@ PlayableDirector:
     value: {fileID: 1499079469}
   - key: {fileID: -1615000498314087967, guid: c6eac079d2cb35245bb0e166b2333eba, type: 2}
     value: {fileID: 1100782308}
+  - key: {fileID: -8597347635498445326, guid: c6eac079d2cb35245bb0e166b2333eba, type: 2}
+    value: {fileID: 5010004812826138096}
   m_ExposedReferences:
     m_References: []
 --- !u!1 &967540392 stripped
@@ -4065,59 +4067,10 @@ PlayableDirector:
     value: {fileID: 94520132}
   - key: {fileID: -2312363897934811137, guid: 4835fbde90f78fd48960f0251b3d96a3, type: 2}
     value: {fileID: 1148976793}
+  - key: {fileID: -2040245826304705044, guid: 4835fbde90f78fd48960f0251b3d96a3, type: 2}
+    value: {fileID: 5010004812826138096}
   m_ExposedReferences:
     m_References: []
---- !u!1 &1902359544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1902359546}
-  - component: {fileID: 1902359545}
-  m_Layer: 0
-  m_Name: Timeline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!320 &1902359545
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902359544}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
-  m_InitialState: 0
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -158376293027366555, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
-    value: {fileID: 1148976793}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &1902359546
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902359544}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08168313, y: -0.4822464, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1903114480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4568,6 +4521,8 @@ PlayableDirector:
     value: {fileID: 1908565018}
   - key: {fileID: 4035114786327191554, guid: 803e6b9756c31444f9e6d6697fb40700, type: 2}
     value: {fileID: 1148976793}
+  - key: {fileID: 5359264518178959273, guid: 803e6b9756c31444f9e6d6697fb40700, type: 2}
+    value: {fileID: 5010004812826138096}
   m_ExposedReferences:
     m_References:
     - 9004fdd487e9a2c4ba3626edf10740f6: {fileID: 25306915}
@@ -4730,6 +4685,8 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: 1454863536137692561, guid: d91044bf18331e94cbe04d143fc1c894, type: 2}
     value: {fileID: 1148976793}
+  - key: {fileID: 6826730812792176947, guid: d91044bf18331e94cbe04d143fc1c894, type: 2}
+    value: {fileID: 5010004812826138096}
   m_ExposedReferences:
     m_References: []
 --- !u!20 &740939822246870367
@@ -4943,6 +4900,8 @@ PlayableDirector:
     value: {fileID: 403747507}
   - key: {fileID: -6970666527311153147, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
     value: {fileID: 822225966}
+  - key: {fileID: -4787307094513201104, guid: 803572b3abd90214d88790d1c14f78a8, type: 2}
+    value: {fileID: 5010004812826138096}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &2703142699586547174
@@ -5219,7 +5178,66 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7920944734880216490, guid: aa4491de43d55604c98787484bcff563, type: 3}
       insertIndex: -1
       addedObject: {fileID: 625798745}
+    - targetCorrespondingSourceObject: {fileID: 7920944734880216490, guid: aa4491de43d55604c98787484bcff563, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5010004812826138096}
   m_SourcePrefab: {fileID: 100100000, guid: aa4491de43d55604c98787484bcff563, type: 3}
+--- !u!114 &5010004812826138096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625798739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: aed8121413b90494e94bc0a766f90dad, type: 2}
+    - {fileID: 11400000, guid: 054db42da0456944ea48099b3288d653, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5010004812826138099}
+          m_TargetAssemblyTypeName: NavMeshTarget, Assembly-CSharp
+          m_MethodName: ActivePlayerMove
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 5010004812826138099}
+          m_TargetAssemblyTypeName: NavMeshTarget, Assembly-CSharp
+          m_MethodName: ActivePlayerMove
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+--- !u!114 &5010004812826138099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5248293669897223088, guid: aa4491de43d55604c98787484bcff563, type: 3}
+  m_PrefabInstance: {fileID: 5010004812826138094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625798739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47159c1d19819d448102e19df6bccd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5130035305122607286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5550,4 +5568,3 @@ SceneRoots:
   - {fileID: 1925964079}
   - {fileID: 5010004812826138094}
   - {fileID: 46450250}
-  - {fileID: 1902359546}
