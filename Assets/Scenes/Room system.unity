@@ -503,6 +503,10 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[4].dialogueText
       value: " \xA1No debes seguir si no esta todo perfecto!"
       objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: OnDialogueFirstEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1564,7 +1568,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3832ab1a414a021419b3662eb5f38f6c, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1751,6 +1755,10 @@ PrefabInstance:
     - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
       propertyPath: dialogues.Array.data[2].dialogueText
       value: "Amigo. \xBFT\xFA de qu\xE9 te enorgulleces?."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: OnDialogueFirstEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1953,6 +1961,10 @@ PrefabInstance:
     - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
       propertyPath: dialogues.Array.data[0].dialogueText
       value: "Yo s\xF3lo soy un turista."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: OnDialogueFirstEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2445,6 +2457,10 @@ PrefabInstance:
       propertyPath: dialogues.Array.data[4].dialogueText
       value: "La \xFAltima puerta debe ser la IZQUIERDA."
       objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: OnDialogueFirstEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2523,9 +2539,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3832ab1a414a021419b3662eb5f38f6c, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_FlipX: 0
+  m_Sprite: {fileID: 21300000, guid: 39ef954d438abdd419fd8b47688c01ec, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 16, y: 9}
@@ -2608,7 +2624,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3832ab1a414a021419b3662eb5f38f6c, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2796,7 +2812,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3832ab1a414a021419b3662eb5f38f6c, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3881,11 +3897,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 545202577465012722, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.008
+      value: 0.1465
       objectReference: {fileID: 0}
     - target: {fileID: 545202577465012722, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.107
+      value: -0.182
       objectReference: {fileID: 0}
     - target: {fileID: 1699925923214422222, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_Sprite
@@ -5505,7 +5521,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3832ab1a414a021419b3662eb5f38f6c, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6484,6 +6500,36 @@ MonoBehaviour:
   transitionDuration: 1
   canvas: {fileID: 3458876524678961678}
   fadeDuration: 0.5
+  OnTransitionStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5010004812826138099}
+        m_TargetAssemblyTypeName: NavMeshTarget, Assembly-CSharp
+        m_MethodName: ActivePlayerMove
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTransitionEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5010004812826138099}
+        m_TargetAssemblyTypeName: NavMeshTarget, Assembly-CSharp
+        m_MethodName: ActivePlayerMove
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!224 &5444876100769204123
 RectTransform:
   m_ObjectHideFlags: 0

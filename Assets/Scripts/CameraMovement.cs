@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class CameraMovement : MonoBehaviour
@@ -13,6 +14,8 @@ public class CameraMovement : MonoBehaviour
     [Header("Fading settings")]
     [SerializeField] CanvasGroup canvas;
     [SerializeField] float fadeDuration = 0.5f;
+    public UnityEvent OnTransitionStart;
+    public UnityEvent OnTransitionEnd;
 
     private void Awake()
     {
@@ -60,6 +63,7 @@ public class CameraMovement : MonoBehaviour
 
     IEnumerator FadeIn()
     {
+        OnTransitionStart.Invoke();
         for (float t = 0; t < fadeDuration; t += Time.deltaTime)
         {
             canvas.alpha = t / fadeDuration;
@@ -76,5 +80,6 @@ public class CameraMovement : MonoBehaviour
             yield return null;
         }
         canvas.alpha = 0;
+        OnTransitionEnd.Invoke();
     }
 }
