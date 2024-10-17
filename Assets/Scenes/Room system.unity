@@ -3986,6 +3986,14 @@ PrefabInstance:
       propertyPath: connectedDoor
       value: 
       objectReference: {fileID: 1428442031}
+    - target: {fileID: 8854856372883771458, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+      propertyPath: OnDogPass.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8854856372883771458, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
+      propertyPath: OnDogPass.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

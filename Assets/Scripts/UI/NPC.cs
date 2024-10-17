@@ -118,7 +118,14 @@ public class NPC : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = false;
-            EndDialogue();
+            isOnDialogue = false;
+            dialogueIndex = 0;
+            DialogueManager.instance.HideUI();
+            if (firstEnd)
+            {
+                OnDialogueFirstEnd.Invoke();
+                firstEnd = false;
+            }
         }
     }
 
