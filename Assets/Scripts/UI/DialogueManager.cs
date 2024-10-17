@@ -29,6 +29,6 @@ public class DialogueManager : MonoBehaviour
     public void HideUI()
     {
         dialogueText.SetText("");
-        dialogueUI?.SetActive(false);
+        dialogueUI.SetActive(false);
     }
 }
