@@ -27,7 +27,7 @@ public class NPC : MonoBehaviour
     int dialogueIndex = 0;
 
     bool canInteract = false;
-    bool isOnDialogue = false;
+    public bool isOnDialogue { private set; get; }
 
     private void Awake()
     {
@@ -84,6 +84,7 @@ public class NPC : MonoBehaviour
             firstEnd = false;
         }
         OnDialogueEnd.Invoke();
+       // DialogueManager.instance.EnablePlayerMove();
     }
 
     public void SkipDialogue()
@@ -110,6 +111,8 @@ public class NPC : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             canInteract = true;
+            DialogueManager.instance.currentNPC = this;
+            DialogueManager.instance.EnableInteractionButton(true);
         }
     }
 
@@ -117,15 +120,11 @@ public class NPC : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            DialogueManager.instance.EnableInteractionButton(false);
             canInteract = false;
             isOnDialogue = false;
             dialogueIndex = 0;
             DialogueManager.instance.HideUI();
-            if (firstEnd)
-            {
-                OnDialogueFirstEnd.Invoke();
-                firstEnd = false;
-            }
         }
     }
 
