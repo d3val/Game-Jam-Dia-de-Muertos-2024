@@ -9,7 +9,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject dialogueUI;
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] GameObject interactionButton;
-    [SerializeField] NavMeshTarget playerMove;
     [HideInInspector]
     public NPC currentNPC;
 
@@ -39,11 +38,6 @@ public class DialogueManager : MonoBehaviour
     public void EnableInteractionButton(bool state)
     {
         interactionButton.SetActive(state);
-    }
-
-    public void EnablePlayerMove()
-    {
-        playerMove.ActivePlayerMove(true);
     }
 
     public void StartNPCDialogue()
