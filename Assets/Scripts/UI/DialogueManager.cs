@@ -8,6 +8,10 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager instance { get; private set; }
     [SerializeField] GameObject dialogueUI;
     [SerializeField] TextMeshProUGUI dialogueText;
+    [SerializeField] GameObject interactionButton;
+    [SerializeField] NavMeshTarget playerMove;
+    [HideInInspector]
+    public NPC currentNPC;
 
     private void Awake()
     {
@@ -31,4 +35,25 @@ public class DialogueManager : MonoBehaviour
         dialogueText.SetText("");
         dialogueUI.SetActive(false);
     }
+
+    public void EnableInteractionButton(bool state)
+    {
+        interactionButton.SetActive(state);
+    }
+
+    public void EnablePlayerMove()
+    {
+        playerMove.ActivePlayerMove(true);
+    }
+
+    public void StartNPCDialogue()
+    {
+        if (currentNPC == null) return;
+
+        if (currentNPC.isOnDialogue)
+            currentNPC.PrintNextDialogue();
+        else
+            currentNPC.StartDialogue();
+    }
+
 }

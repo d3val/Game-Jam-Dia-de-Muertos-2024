@@ -8,6 +8,7 @@ public class NavMeshTarget : MonoBehaviour
     private NavMeshAgent agent;
     [SerializeField] Camera cam;
     bool canMove = true;
+    public bool isOnDialogue { get; private set; }
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class NavMeshTarget : MonoBehaviour
 
     private void Update()
     {
+
         if (!canMove) return;
 
         if (Input.GetMouseButtonDown(0))
@@ -34,6 +36,7 @@ public class NavMeshTarget : MonoBehaviour
 
     private void SetDestination(Vector3 destination)
     {
+        if (!canMove) return;
         agent.isStopped = false;
         agent.SetDestination(destination);
         Vector3 direction = (destination - transform.position).normalized;
@@ -55,6 +58,6 @@ public class NavMeshTarget : MonoBehaviour
 
     public void ActivePlayerMove(bool state)
     {
-       canMove = state;
+        canMove = state;
     }
 }
