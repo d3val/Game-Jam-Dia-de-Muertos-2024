@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: jungla_front_00_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 389
+        width: 203
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56f31ce44cee2346a05ad586d0c9050
+      internalID: 1634956069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungla_front_00_1
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 275
+        width: 203
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455a299709405674782fa45a3d5b3e8d
+      internalID: -1699770060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungla_front_00_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 161
+        width: 203
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c1ec74ae1aa22a47a968460f27d97bc
+      internalID: -1203511423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jungla_front_00_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 54
+        width: 204
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c88d92e9369e52a468c8215dc3e3478a
+      internalID: -1406944435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      jungla_front_00_0: 1634956069
+      jungla_front_00_1: -1699770060
+      jungla_front_00_2: -1203511423
+      jungla_front_00_3: -1406944435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

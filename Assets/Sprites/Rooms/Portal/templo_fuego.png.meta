@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 165c44f2f503c994dab3b57d752a5f8a
+guid: 201379183a2557d46b96acd907092f64
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,7 +121,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: templo_fuego_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 385
+        width: 180
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3936b2118595dc74aa8a1e21c788c13b
+      internalID: 115533257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: templo_fuego_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 282
+        width: 184
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a171b61b07f53dd4794b5f6fd19a495d
+      internalID: 957116628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: templo_fuego_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 178
+        width: 184
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fd9b1424322c548bc3f184b564f9e7
+      internalID: -1800717502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: templo_fuego_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 75
+        width: 184
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d06d40394be7bf42b98073803ccdf3d
+      internalID: 281845231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +216,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      templo_fuego_0: 115533257
+      templo_fuego_1: 957116628
+      templo_fuego_2: -1800717502
+      templo_fuego_3: 281845231
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
