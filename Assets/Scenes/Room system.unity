@@ -6564,7 +6564,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 7256410736445334450}
     m_Modifications:
     - target: {fileID: 356029080659468422, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: room
@@ -6604,7 +6604,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2143147037946583659, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 2143147037946583659, guid: 7adefbe603d230d4abfb96757d6c5aad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13452,6 +13452,7 @@ Transform:
   - {fileID: 617812363}
   - {fileID: 452374410}
   - {fileID: 1033658699}
+  - {fileID: 1233533864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7341341303445622326
@@ -13558,7 +13559,6 @@ SceneRoots:
   - {fileID: 7083110458486012275}
   - {fileID: 8199891910282923339}
   - {fileID: 7256410736445334450}
-  - {fileID: 1233533863}
   - {fileID: 4327161987324712383}
   - {fileID: 1155059714}
   - {fileID: 5823241854626623423}
