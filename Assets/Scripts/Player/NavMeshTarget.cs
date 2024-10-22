@@ -68,6 +68,8 @@ public class NavMeshTarget : MonoBehaviour
 
     public void ActivePlayerMove(bool state)
     {
+        if (!state)
+            agent.SetDestination(transform.position);
         agent.isStopped = state;
         canMove = state;
     }
