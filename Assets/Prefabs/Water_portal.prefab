@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1595881775160863483}
   - component: {fileID: 410526252464051892}
   m_Layer: 3
-  m_Name: Door
+  m_Name: Water_portal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 6248444071504070012}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.34375, z: 0}
-  m_LocalScale: {x: 0.016666668, y: 0.025, z: 0.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.07, y: 0.07, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8525381153113001202}
@@ -125,7 +125,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 13.5, y: 13.5}
+    oldSize: {x: 1.96, y: 1.05}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -149,6 +149,12 @@ MonoBehaviour:
   room: 0
   connectedDoor: {fileID: 2141098519489373821, guid: 081d2dd9f50967b408ce0b106d50ffd8, type: 3}
   spawnPos: {fileID: 8525381153113001202}
+  OnDogPass:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPlayerPass:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1595881775160863483
 Animator:
   serializedVersion: 5
