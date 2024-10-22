@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4784822659153322920
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 757759975057699983, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757759975057699983, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 757759975057699983, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1667872810, guid: 14bf3fa8916d5ea4d800bcdd9070072b, type: 3}
+    - target: {fileID: 757759975057699983, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 757759975057699983, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_Color.g
+      value: 0.98953366
+      objectReference: {fileID: 0}
+    - target: {fileID: 757759975057699983, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3066038
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103277027178796199, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ef783769694e6014eb0390d7db674a4c, type: 2}
+    - target: {fileID: 4157042506672185021, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_Name
+      value: NPC Alma 1 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7000008
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6060443546893111648, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogueText
+      value: "Me contaron un acertijo el otro d\xEDa que me mantiene perplejo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[1].dialogueText
+      value: 'Soy la sombra que siempre aparece,
+
+        el fin que a todos pertenece.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[2].dialogueText
+      value: 'Soy el invitado sin ser llamado,
+
+        el final que nadie ha evitado.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[3].dialogueText
+      value: "Cierro el libro, apago la luz,\r\nsin distinci\xF3n de rey o de cruz. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[4].dialogueText
+      value: "\xBFTu sabes qu\xE9 es?."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[5].dialogueText
+      value: Por cierto...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: dialogues.Array.data[6].dialogueText
+      value: "Esuch\xE9 que para salir de aqu\xED primero tienes que ir para ARRIBA."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354769210824661288, guid: 5269a71fab36b324686430ea4726103b, type: 3}
+      propertyPath: OnDialogueFirstEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5269a71fab36b324686430ea4726103b, type: 3}
