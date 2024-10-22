@@ -7,8 +7,14 @@ public class NavMeshTarget : MonoBehaviour
 
     private NavMeshAgent agent;
     [SerializeField] Camera cam;
-    bool canMove = true;
+    public bool canMove = true;
     public bool isOnDialogue { get; private set; }
+    public static NavMeshTarget Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -20,7 +26,11 @@ public class NavMeshTarget : MonoBehaviour
     private void Update()
     {
 
-        if (!canMove) return;
+        if (!canMove)
+        {
+            agent.isStopped = true;
+            return;
+        }
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -58,6 +68,7 @@ public class NavMeshTarget : MonoBehaviour
 
     public void ActivePlayerMove(bool state)
     {
+        agent.isStopped = state;
         canMove = state;
     }
 }
