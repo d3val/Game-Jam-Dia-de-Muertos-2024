@@ -744,7 +744,7 @@ MonoBehaviour:
   buttonFxSounds: {fileID: 0}
   hoverSound: {fileID: 8300000, guid: 949bd3f49b7a8a041bafc89d35d74352, type: 3}
   secondSource: {fileID: 0}
-  m_image: {fileID: 0}
+  m_image: {fileID: 252524525}
 --- !u!114 &252524523
 MonoBehaviour:
   m_ObjectHideFlags: 0
