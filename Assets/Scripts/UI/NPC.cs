@@ -53,6 +53,7 @@ public class NPC : MonoBehaviour
 
     public void StartDialogue()
     {
+        NavMeshTarget.Instance.ActivePlayerMove(false);
         isOnDialogue = true;
         dialogueIndex = 0;
         OnInteractStart.Invoke();
@@ -83,8 +84,9 @@ public class NPC : MonoBehaviour
             OnDialogueFirstEnd.Invoke();
             firstEnd = false;
         }
+        NavMeshTarget.Instance.ActivePlayerMove(true);
         OnDialogueEnd.Invoke();
-       // DialogueManager.instance.EnablePlayerMove();
+        // DialogueManager.instance.EnablePlayerMove();
     }
 
     public void SkipDialogue()
